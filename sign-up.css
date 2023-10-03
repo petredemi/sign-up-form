@@ -1,8 +1,25 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: my-font;
+    src: url(./fonts/CroissantOne-Regular.ttf);
+}
+@font-face {
+    font-family: my-font-1;
+    src: url(./fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: my-font-2;
+    src: url(./fonts/Norse-Bold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
 body{
     display: flex;
     justify-content: center;
 }
+
 #main{
     display: flex;
     align-items: center;
@@ -21,18 +38,39 @@ img{
 }
 .logo_text{
     position: absolute;
-    padding-top: 10px;
     color: white;
-    font-size: 5rem;
-    font-weight: 700;
+    font-family: my-font,'Roboto', sans-serif;
+    font-size: 18vh;
+    font-weight: 900;
     text-shadow: 2px 2px 2px black;
     background-color: rgba(9, 7, 7, 0.5);
-    top: 5rem;
-    height: 15vh;
+    top: 2rem;
+    height: 25vh;
     text-align: center;
     width: 100%;
     overflow: hidden;
+    text-shadow: 2px 2px 2px  black;
+    display: flex;
+    justify-content: center;
 }
+svg {
+    height: 90%;
+  }
+.svg-1:hover path {
+    d: path("M8,2 L2,8");
+  }
+svg polyline,
+svg line,
+svg path {
+  fill: none;
+  stroke: #0adfa3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 0.2s;
+}
+.logo_text::before{
+    content: svg;
+ }
 .photo_credit{
     position: absolute;
     bottom: 0;
@@ -40,32 +78,38 @@ img{
     bottom: 0.5rem;
 }
 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     box-sizing: content-box;
-    height: 100vh;
+    height: 100%;
     width: auto;
+    overflow: hidden;
 }
 .text{
-    background: linear-gradient(40deg,  rgb(171, 165, 165) 20%,
-     rgb(239, 235, 235) 100% );
-    height: 33vh;
-    border: 1px solid black;
+    background: linear-gradient(40deg,  rgba(239, 238, 238, 0.631) 30%,
+     rgb(255, 255, 255) 100% );
+    height: 30vh;
     font-size: 1.2rem;
     font-weight: bold;
-    box-shadow: -2px 1px 2px black;
     overflow: hidden;
     padding-right: 120px;
 }
 .text p{
     margin-left: 20px;
+    width: 30rem;
+    margin-top: 40px;
 }
 form{
-    margin-top: 10px;
+    margin-top: 12px;
+    height: 66vh;
 }
 fieldset{
     display: flex;
     border: none;
     margin-left: 40px;
-    height: 100%;
+    height: 35vh;
+    overflow: hidden;
 }
 legend{
     font-size: 1.4rem;
@@ -82,12 +126,11 @@ li{
     margin: 5px;
     width: 10rem;
 }
-
 .submit{
-    height: 10rem;
-    background: linear-gradient(80deg,  rgb(148, 138, 138) 30%,
-    rgb(237, 233, 233) 100% );
+    background: linear-gradient(40deg,  rgba(225, 225, 225, 0.613) 30%,
+    rgb(255, 255, 255) 100% );
     padding: 30px;
+    height: 35%;
 
 }
 button{

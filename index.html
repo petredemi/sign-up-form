@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'sign-up.css'>
+
+    <title>sign-up-form</title>
+</head>
+<body>
+
+<div id ='main'>
+    <div class= "image-content">
+        <img src = './pictures/tree1.jpg'>
+        <p class='logo_text'>
+            <svg viewBox="0 0 10 10" class="svg-1">
+                <path d="M2,2 L8,8" />
+              </svg>
+
+        TREE </p>
+        <p class = "photo_credit">Photo by Petru Demian</p>
+    </div>
+    <div class = 'content'>
+        <div class= "text">     
+            <p>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up now to get started. </p>            
+            <p>You know you want to.</p>
+        </div>
+        <form action="exemple" method="post" >
+            <fieldset>
+                  <Legend>Let's do this!</legend>
+                  <ul>
+                      <li>
+                          <label for = first_name>*First Name</label> 
+                          <input type ='text' id="first_name" name = 'first_name' required>        
+                      </li>
+                      <li>                
+                          <label for ='last-name'>Last Name </label>    
+                          <input type ='text' id ='last-name' name ='last-name'>
+                      </li>
+                      <li>
+                        <label for="email">Email</label>
+                        <input type ='email' id ='email' name ='email' placeholder="you@exemple.com">
+                      </li>
+                   </ul>
+                   <ul>
+                      <li>
+                         <label for ='phone'>Phone Number</label>
+                         <input type = 'tel' id ='phone' name ='phone_number' pattern='[0-9]{11}'
+                         placeholder="07572856261" maxlength="11">
+                      </li>
+                      <li>
+                         <label for ='user_password' >*Password</label>
+                         <input type ='password' id ='user_password' name ='user_password' required>
+                      </li>
+                      <li>
+                         <label for ='confirm_password'>*Confirm Password</label>
+                         <input type ='password' id = 'confirm_password' name="confirm_pasword" required>
+                      </li>
+                  </ul>
+              </fieldset>
+
+               <div class = 'submit'>
+                   <button type ='submit'>Create Account</button>
+                   <p> Already have an account? Log in</p>
+               </div>
+   
+
+        </form>
+    </div>  
+
+</div>
+
+</body>
+</html>
