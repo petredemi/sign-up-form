@@ -104,6 +104,7 @@ fieldset{
     display: flex;
     flex-wrap: wrap;
     border: none;
+    height: 60%;
 }
 legend{
     font-size: 1.3rem;
@@ -113,8 +114,8 @@ label{
     font-size: 1.1rem;
 }
 input{
-    height: 1.1rem;
-    font-size: 1rem;
+    height: 1.4rem;
+    font-size: 1.1rem;
     border: 1px solid gray;
     margin-right: 10px;
 
@@ -127,7 +128,7 @@ input:hover{
     border-color: red;
 }
 fieldset ul{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 ul{
@@ -148,7 +149,7 @@ li{
     background: linear-gradient(40deg,  rgba(225, 225, 225, 0.613) 30%,
     rgb(255, 255, 255) 100% );
     padding: 30px;
-    height: 35%;
+    height: 40%;
     padding-left: 30px;
     width: auto;
 
