@@ -58,16 +58,33 @@
                   </ul>
                  
                 </fieldset>
-               <div class = 'submit'>
-                   <button type ='submit'>Create Account</button>
-                   <p> Already have an account? Log in</p>
-               </div>
-   
+        
+            
+                <div class = 'submit'>
+                    <button type ='submit'>Create Account</button>
+                    <p> Already have an account? Log in</p>
+                </div>
 
         </form>
     </div>  
 
 </div>
 
+
+
 </body>
+<script>
+    let a = document.querySelector('#user_password');
+    let b = document.querySelector('#confirm_password');
+    const button = document.querySelector('button');
+    function submitForm(){
+            if( a !== b) return;
+}
+    button.addEventListener('click', submitForm);
+
+
+
+
+
+</script>
 </html>
